@@ -1,14 +1,386 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marek Vagabund</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detailng Marek — Profesionální čištění a ochrana vozidel</title>
+  <meta name="description" content="Profesionální detailing, čištění interiéru a exteriéru, keramická ochrana laku. Marek Vagabund, +420 777 269 919.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://detailngmarek.cz/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://detailngmarek.cz/">
+  <meta property="og:title" content="Detailng Marek — Profesionální čištění a ochrana vozidel">
+  <meta property="og:description" content="Detailing, čištění a keramická ochrana laku. Váš vůz si zaslouží to nejlepší.">
+  <meta property="og:image" content="https://detailngmarek.cz/img/og-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="favicon.ico">
+
+  <!-- Dark mode flash prevention -->
+  <script>
+    (function(){
+      var s = localStorage.getItem('theme');
+      if (s === 'light') document.documentElement.setAttribute('data-theme','light');
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/style.css?v=1">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Detailng Marek",
+    "description": "Profesionální čištění, detailing a keramická ochrana vozidel.",
+    "telephone": "+420777269919",
+    "email": "gakolcz1@seznam.cz",
+    "url": "https://detailngmarek.cz",
+    "priceRange": "1500–7000 Kč"
+  }
+  </script>
 </head>
 <body>
-    <header><h1>Marek Vagabund</h1></header>
-    <main><p>Web se připravuje.</p></main>
-    <footer><p>&copy; 2026 Marek Vagabund</p></footer>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">◈</span>
+        <span>Detailng<strong>Marek</strong></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sluzby" class="nav-link">Služby</a></li>
+        <li><a href="#cenik" class="nav-link">Ceník</a></li>
+        <li><a href="#galerie" class="nav-link">Galerie</a></li>
+        <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Přepnout téma">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#kontakt" class="btn btn-accent nav-cta">Nezávazná poptávka</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">Profesionální detailing</div>
+      <h1 class="hero-title">Váš vůz si zaslouží<br><span class="accent">to nejlepší.</span></h1>
+      <p class="hero-sub">Čištění, detailing a keramická ochrana laku. Děláme to poctivě, s důrazem na každý detail — protože záleží na výsledku.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-accent btn-lg">Nezávazná poptávka</a>
+        <a href="#cenik" class="btn btn-ghost btn-lg">Zobrazit ceník</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Roky zkušeností</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Spokojení zákazníci</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">Kvalita</span>
+          <span class="stat-label">Na prvním místě</span>
+        </div>
+      </div>
+    </div>
+    <a href="#sluzby" class="scroll-down" aria-label="Přejít dolů">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!-- ===== SLUŽBY ===== -->
+  <section class="section" id="sluzby">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Co děláme</span>
+        <h2 class="section-title">Naše služby</h2>
+        <p class="section-sub">Specializujeme se na profesionální péči o vaše vozidlo. Každá zakázka dostane plnou pozornost.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Čištění vozu</h3>
+          <p>Kompletní mytí a čištění exteriéru i interiéru. Odstraníme nečistoty, prach, skvrny a zanecháme váš vůz zářivě čistý.</p>
+          <ul class="service-list">
+            <li>Ruční mytí exteriéru</li>
+            <li>Čištění interiéru a tapicérie</li>
+            <li>Čištění plastů a kůže</li>
+            <li>Vyleštění skel</li>
+          </ul>
+          <span class="service-price">od 1 500 Kč</span>
+        </div>
+
+        <div class="service-card service-featured">
+          <div class="service-badge-featured">Nejoblíbenější</div>
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Detailing + čištění</h3>
+          <p>Profesionální detailing kombinovaný s kompletním čištěním vozu. Obnovíme lesk laku, odstraníme mikrorysky a dáme vozu nový život.</p>
+          <ul class="service-list">
+            <li>Vše z čištění vozu</li>
+            <li>Strojní leštění laku</li>
+            <li>Korekce defektů laku</li>
+            <li>Ošetření plastů a gum</li>
+          </ul>
+          <span class="service-price">od 3 000 Kč</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Keramická ochrana</h3>
+          <p>Nejvyšší úroveň ochrany vašeho vozu. Keramický povlak vytvoří tvrdou ochrannou vrstvu, která odolá chemikáliím, UV záření i škrábancům.</p>
+          <ul class="service-list">
+            <li>Vše z detailingu</li>
+            <li>Aplikace keramického povlaku</li>
+            <li>Ochrana na roky dopředu</li>
+            <li>Hydrofobní efekt</li>
+          </ul>
+          <span class="service-price">od 7 000 Kč</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CENÍK ===== -->
+  <section class="section section-dark" id="cenik">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Transparentní ceny</span>
+        <h2 class="section-title">Ceník</h2>
+        <p class="section-sub">Žádné skryté poplatky. Cena závisí na velikosti a stavu vozidla — kontaktujte nás pro přesnou kalkulaci.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Čištění</h3>
+            <div class="pricing-price"><span class="price-num">1 500</span><span class="price-cur">Kč</span></div>
+            <p class="pricing-note">osobní automobil</p>
+          </div>
+          <ul class="pricing-list">
+            <li>Ruční mytí exteriéru</li>
+            <li>Vysávání interiéru</li>
+            <li>Čištění plastů</li>
+            <li>Vyleštění skel</li>
+            <li>Čištění kol a podběhů</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Objednat</a>
+        </div>
+
+        <div class="pricing-card pricing-featured">
+          <div class="pricing-badge">Nejoblíbenější</div>
+          <div class="pricing-header">
+            <h3>Detailing + čištění</h3>
+            <div class="pricing-price"><span class="price-num">3 000</span><span class="price-cur">Kč</span></div>
+            <p class="pricing-note">osobní automobil</p>
+          </div>
+          <ul class="pricing-list">
+            <li>Vše z čištění</li>
+            <li>Strojní leštění laku</li>
+            <li>Korekce mikrorysk</li>
+            <li>Ošetření plastů a gum</li>
+            <li>Impregnace čalounění</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-accent">Objednat</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Keramika + vše</h3>
+            <div class="pricing-price"><span class="price-num">7 000</span><span class="price-cur">Kč</span></div>
+            <p class="pricing-note">osobní automobil</p>
+          </div>
+          <ul class="pricing-list">
+            <li>Vše z detailingu</li>
+            <li>Keramická ochrana laku</li>
+            <li>Ochrana skel a plastů</li>
+            <li>Hydrofobní efekt</li>
+            <li>Záruka trvanlivosti</li>
+          </ul>
+          <a href="#kontakt" class="btn btn-outline">Objednat</a>
+        </div>
+
+      </div>
+      <p class="pricing-footer">Ceny jsou orientační. Finální cena závisí na stavu, velikosti a typu vozidla. Vždy vás předem informujeme.</p>
+    </div>
+  </section>
+
+  <!-- ===== GALERIE ===== -->
+  <section class="section" id="galerie">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Naše práce</span>
+        <h2 class="section-title">Galerie</h2>
+        <p class="section-sub">Výsledky mluví za vše. Podívejte se na naše dokončené zakázky.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item--large">
+          <div class="gallery-placeholder"><span>Foto 1</span></div>
+          <div class="gallery-overlay"><span>Detailing BMW</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder"><span>Foto 2</span></div>
+          <div class="gallery-overlay"><span>Keramická ochrana</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder"><span>Foto 3</span></div>
+          <div class="gallery-overlay"><span>Čištění interiéru</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder"><span>Foto 4</span></div>
+          <div class="gallery-overlay"><span>Leštění laku</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-placeholder"><span>Foto 5</span></div>
+          <div class="gallery-overlay"><span>Detailing Audi</span></div>
+        </div>
+      </div>
+      <p class="gallery-note">Vlastní fotografie budou přidány po dodání klientem.</p>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section class="section section-dark" id="kontakt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Spojte se s námi</span>
+        <h2 class="section-title">Kontakt</h2>
+        <p class="section-sub">Napište nám nebo zavolejte. Rádi zodpovíme vaše otázky a domluvíme termín.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <h3>Marek Vagabund</h3>
+          <p class="contact-desc">Detailng Marek<br>Profesionální čištění a ochrana vozidel</p>
+          <div class="contact-items">
+            <a href="tel:+420777269919" class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.36 2 2 0 0 1 3.6 1.17h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.73a16 16 0 0 0 6.29 6.29l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Telefon</span>
+                <span class="contact-val">+420 777 269 919</span>
+              </div>
+            </a>
+            <a href="mailto:gakolcz1@seznam.cz" class="contact-item">
+              <div class="contact-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">E-mail</span>
+                <span class="contact-val">gakolcz1@seznam.cz</span>
+              </div>
+            </a>
+          </div>
+          <div class="contact-hours">
+            <h4>Pracovní doba</h4>
+            <p>Po–Pá: 8:00–18:00</p>
+            <p>So: 9:00–14:00</p>
+            <p>Ne: dle dohody</p>
+          </div>
+        </div>
+
+        <form class="contact-form" name="poptavka" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
+          <input type="hidden" name="form-name" value="poptavka">
+          <p class="hidden"><label>Nevyplňujte: <input name="bot-field"></label></p>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Jméno a příjmení *</label>
+              <input type="text" id="name" name="name" placeholder="Jan Novák" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Telefon *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+420 xxx xxx xxx" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="vas@email.cz">
+          </div>
+          <div class="form-group">
+            <label for="car">Typ vozidla</label>
+            <input type="text" id="car" name="car" placeholder="např. VW Golf, BMW 3, ...">
+          </div>
+          <div class="form-group">
+            <label for="service">Zájem o službu</label>
+            <select id="service" name="service">
+              <option value="">-- Vyberte službu --</option>
+              <option value="cisteni">Čištění (od 1 500 Kč)</option>
+              <option value="detailing">Detailing + čištění (od 3 000 Kč)</option>
+              <option value="keramika">Keramická ochrana (od 7 000 Kč)</option>
+              <option value="jine">Jiné / nejsem si jistý</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Zpráva</label>
+            <textarea id="message" name="message" rows="4" placeholder="Popište stav a historii vozidla, případně termín..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent btn-block">Odeslat poptávku</button>
+          <div class="form-success" id="form-success">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            Děkujeme! Ozveme se vám co nejdříve.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">
+          <span class="logo-icon">◈</span>
+          <span>Detailng<strong>Marek</strong></span>
+        </a>
+        <p>Profesionální čištění a ochrana vozidel.<br>Váš vůz v dobrých rukou.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Patička navigace">
+        <a href="#sluzby">Služby</a>
+        <a href="#cenik">Ceník</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Detailng Marek. Webové stránky vytvořila <a href="https://webzitra.cz" target="_blank" rel="noopener">WebZítra</a>.</p>
+    </div>
+  </footer>
+
+  <!-- ===== COOKIE BANNER ===== -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Souhlas s cookies" hidden>
+    <div class="cookie-content">
+      <p>Tento web používá pouze technické cookies nezbytné pro jeho funkci. Nepoužíváme analytické ani reklamní cookies.</p>
+      <div class="cookie-actions">
+        <button class="btn btn-ghost btn-sm" id="cookie-reject">Odmítnout</button>
+        <button class="btn btn-accent btn-sm" id="cookie-accept">Souhlasím</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js?v=1"></script>
 </body>
 </html>
